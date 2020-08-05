@@ -1,4 +1,4 @@
-var figlet = require('figlet');
+const figlet = require('figlet');
 const greet = require('./greet');
  
 figlet(greet('Xola'), function(err, data) {
@@ -9,3 +9,4 @@ figlet(greet('Xola'), function(err, data) {
     }
     console.log(data)
 });
+
