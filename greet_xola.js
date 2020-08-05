@@ -7,12 +7,10 @@ const greet = require('./greet');
 
 figlet(greet('Xola'), function(err, data) {
 
-const styledMessage = chalk.bgGreen.black(data);
-
     if (err) {
         console.log('Something went wrong...');
         console.dir(err);
         return;
     }
-    console.log(styledMessage)
+    console.log(chalk.bgGreen.black(data))
 });
